@@ -1,8 +1,8 @@
-const express = require("express");
-const router = require("./api/routes/router");
-const quality = require("./api/utilities/calculations/quality");
-const helpers = require("./api/utilities/calculations/helpers");
-const dataStorage = require("./api/storage/dataStorage");
+import express from "express";
+import router from "./api/routes/router";
+import quality from "./api/utilities/calculations/quality";
+import helpers from "./api/utilities/calculations/helpers";
+import dataStorage from "./api/storage/dataStorage";
 
 const app = express();
 

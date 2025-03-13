@@ -1,6 +1,6 @@
-const express = require("express");
+import express from "express";
 const router = express.Router();
-const { getData } = require("./controllers/dataController");
+import { getData } from "./controllers/dataController.js";
 // GET ROUTES
 //
 //
@@ -19,4 +19,4 @@ router.get("*", (req, res) => {
   res.send("No Route Found");
 });
 
-module.exports = router;
+export default router;

@@ -1,6 +1,6 @@
 // GET Controllers
 
-function getData(req, res) {
+export function getData(req, res) {
   res.send("Hello, world!");
 }
 
@@ -31,5 +31,3 @@ function deleteUser(req, res) {}
 function deleteUserBoard(req, res) {}
 
 function deleteUserFavourite(req, res) {}
-
-module.exports = { getData };
