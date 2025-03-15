@@ -6,8 +6,14 @@ import fetchWindData from "../../utilities/fetch/fetchWindData.js";
 // GET Controllers
 
 export async function getGeoData(req, res) {
-  const data = await fetchGeoData(req.query.location);
-  res.send(data);
+  const { location } = req.query;
+  const regex = /\D+/gm;
+  if (location && typeof location == "string" && location.match(regex)) {
+    const data = await fetchGeoData(req.query.location);
+    res.send(data);
+  } else {
+    res.send("Malformed location data presented");
+  }
 }
 export async function getWaveDataByGeo(req, res) {
   const data = await fetchWaveData(req.query.lat, req.query.lon);

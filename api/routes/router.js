@@ -9,6 +9,7 @@ import {
   getWindDataByGeo,
   getWindDataByLoc,
 } from "./controllers/dataController.js";
+
 // GET ROUTES
 //
 //
