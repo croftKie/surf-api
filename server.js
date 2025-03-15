@@ -1,8 +1,5 @@
 import express from "express";
-import router from "./api/routes/router";
-import quality from "./api/utilities/calculations/quality";
-import helpers from "./api/utilities/calculations/helpers";
-import dataStorage from "./api/storage/dataStorage";
+import router from "./api/routes/router.js";
 
 const app = express();
 
@@ -19,7 +16,3 @@ const timeLog = (req, res, next) => {
 app.use(timeLog);
 
 app.use("/", router);
-
-quality._test();
-helpers._test();
-dataStorage.getWaveData();

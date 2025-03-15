@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1741826121744" clover="3.2.0">
-  <project timestamp="1741826121744" name="All files">
-    <metrics statements="12" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="2" elements="27" coveredelements="12" complexity="0" loc="12" ncloc="12" packages="3" files="3" classes="3"/>
+<coverage generated="1741997536746" clover="3.2.0">
+  <project timestamp="1741997536746" name="All files">
+    <metrics statements="35" coveredstatements="31" conditionals="2" coveredconditionals="2" methods="18" coveredmethods="6" elements="55" coveredelements="39" complexity="0" loc="35" ncloc="35" packages="3" files="6" classes="6"/>
     <package name="routes">
-      <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="router.js" path="/Users/kierancroft/Documents/CroftCode/back-end-builds/tidechaser/api/routes/router.js">
-        <metrics statements="4" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="2" count="1" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
       </file>
     </package>
     <package name="routes.controllers">
@@ -20,8 +20,40 @@
       </file>
     </package>
     <package name="utilities.fetch">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="30" coveredstatements="26" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <file name="fetchGeoData.js" path="/Users/kierancroft/Documents/CroftCode/back-end-builds/tidechaser/api/utilities/fetch/fetchGeoData.js">
+        <metrics statements="9" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+      </file>
+      <file name="fetchTempData.js" path="/Users/kierancroft/Documents/CroftCode/back-end-builds/tidechaser/api/utilities/fetch/fetchTempData.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="fetchWaveData.js" path="/Users/kierancroft/Documents/CroftCode/back-end-builds/tidechaser/api/utilities/fetch/fetchWaveData.js">
+        <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+      </file>
+      <file name="fetchWindData.js" path="/Users/kierancroft/Documents/CroftCode/back-end-builds/tidechaser/api/utilities/fetch/fetchWindData.js">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>

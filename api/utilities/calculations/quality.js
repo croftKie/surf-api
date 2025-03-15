@@ -15,7 +15,6 @@ class Quality {
       return 2;
     }
   }
-
   _byWaveSize(waveHeight, preferredWaveSize) {
     const DEFAULT = 50.0;
     const diff = (waveHeight - preferredWaveSize) * 10;
@@ -31,11 +30,11 @@ class Quality {
   _byWindDirection(windDirect, waveDirect) {
     const OFFSET = 0.8;
 
-    const diff = abs(windDirect - waveDirect) / 2;
+    const diff = Math.abs(windDirect - waveDirect) / 2;
     return diff / 180.0 + OFFSET;
   }
   _byBoardSize(size) {
-    const sizeFloat = size.toFloat();
+    const sizeFloat = parseFloat(size);
     const DEFAULTSIZE = 7.0;
     const OFFSET = 1.5;
 
@@ -45,10 +44,6 @@ class Quality {
       const adjustment = (sizeFloat - DEFAULTSIZE) * OFFSET;
       return adjustment / 10 + 1;
     }
-  }
-
-  _test() {
-    console.log("testing quality");
   }
 }
 
